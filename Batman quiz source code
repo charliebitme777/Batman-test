@@ -1,0 +1,46 @@
+/******************************************************************************
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+*******************************************************************************/
+#include <iostream>
+using namespace std;
+void batmanQuizGrader(char movieQuote);
+int main()
+{
+    char Results;
+    char movieQuote;
+    
+    
+    cout<<"what is the following quote if from what movie: "<< endl;
+    cout<<"i was born in the darkness"<<endl;
+    cout<<"a) james bond"<<endl;
+    cout<<"b) batman"<<endl;
+    cout<<"c) diary of a wimpy kid"<<endl;
+    cout<<"d) the avengers"<<endl;
+    cout<<"______________________________________________________________"<<endl;
+    cout<<" choose and type lowercase a,b,c,or d"<<endl;
+    cout<<" "<<endl;
+    
+    cin>>movieQuote;
+    
+    
+    batmanQuizGrader( movieQuote);
+    
+    
+    return 0;
+}
+void batmanQuizGrader(char movieQuote)
+{
+    if (movieQuote == 'b'|| movieQuote == 'B') {
+            cout<<"you win"<<endl;
+            }
+        else{
+            cout<< "you fail"<<endl;
+        }
+        
+    return ;
+}        
+        
+        
+        
